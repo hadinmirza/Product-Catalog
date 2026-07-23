@@ -1,1 +1,10 @@
-<p>category-filter works!</p>
+<select
+[(ngModel)]="selectedCategory"
+(change)="onCategoryChange()">
+
+    <option value="">All Categories</option>
+    <option value="Shoes">Shoes</option>
+    <option value="Clothing">Clothing</option>
+    <option value="Electronics">Electronics</option>
+
+</select>
